@@ -43,6 +43,6 @@ All of the libraries are available in standard linux distributions, via pip or i
 
 # About the trainer
 
-Bartosz Telenczuk has been active Python user since 2005. He is creator of svgutils and he  has contributed to many open source Python libraries including numpy and matplotlib.  He is also a Python advocate and an instructor at [advanced Python schools for scientists](https://python.g-node.org/python-summerschool-2013/). Currently he is a researcher in France, developing methods to interpret the electrical activity of the brain.
+Bartosz Telenczuk has been active Python user since 2005. He is creator of [svgutils](https://github.com/btel/svg_utils) and he  has contributed to many open source Python libraries including numpy and matplotlib.  He is also a Python advocate and an instructor at [advanced Python schools for scientists](https://python.g-node.org/python-summerschool-2013/). Currently he is a researcher in France, developing methods to interpret the electrical activity of the brain.
 
 Personal website: http://neuroscience.telenczuk.pl
