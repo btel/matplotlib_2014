@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.6: http://docutils.sourceforge.net/" />
+<title></title>
+<meta name="author" content="Bartosz Telenczuk" />
+<meta name="date" content="September, 2013" />
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 5951 2009-05-18 18:03:10Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left{
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: left }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Author:</th>
+<td>Bartosz Telenczuk</td></tr>
+<tr><th class="docinfo-name">Date:</th>
+<td>September, 2013</td></tr>
+<tr><th class="docinfo-name">Revision:</th>
+<td>2</td></tr>
+</tbody>
+</table>
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script><div class="note">
+<p class="first admonition-title">Note</p>
+<p>In all of the code examples are given in python 2.7 syntax. In addition,
+standard python imports are used:</p>
+<pre class="last literal-block">
+import numpy as np
+import matplotlib.pyplot as plt
+</pre>
+</div>
+<div class="section" id="visualization-exercises">
+<h1>Visualization Exercises</h1>
+<p><strong>List of exercises</strong>:</p>
+<blockquote>
+<ul class="simple">
+<li><a class="reference internal" href="#basic-matplotlib">Basic matplotlib</a> – first steps in matplotlib</li>
+<li><a class="reference internal" href="#exploring-olympic-games">Exploring Olympic Games</a> – for more advanced matplotlib users</li>
+</ul>
+</blockquote>
+<div class="section" id="basic-matplotlib">
+<h2>Basic matplotlib</h2>
+<p>This tutorial covers the  basic <tt class="docutils literal">pyplot</tt> interface of <tt class="docutils literal">matplotlib</tt>.
+You will use the  interface to produce quickly efficient visualizations
+of your data. You may skip the section if you used matplotlib before.</p>
+<ol class="arabic">
+<li><p class="first">Generate two data arrays of equal lengths (X and Y variable).
+This could look like this:</p>
+<pre class="literal-block">
+import numpy as np
+t = np.arange(0.1, 9.2, 0.15)
+#add some noise to dependent variable
+y = t+np.random.rand(len(t))
+</pre>
+</li>
+<li><p class="first">Import <tt class="docutils literal">matplotlib.pyplot</tt> and plot the data as an XY graph:</p>
+<pre class="literal-block">
+import matplotlib.pyplot as plt
+plt.plot(t,y)
+plt.show()
+</pre>
+</li>
+<li><p class="first">Last plot appeared only after <tt class="docutils literal">plt.show()</tt> command. To switch to
+interactive mode, in which you can see immediately the output of
+your commands use <tt class="docutils literal">plt.ion()</tt>. Try calling the <tt class="docutils literal">plt.plot</tt>
+function again.</p>
+</li>
+<li><p class="first">Label the axes by calling <tt class="docutils literal">plt.xlabel</tt> and <tt class="docutils literal">plt.ylabel</tt>
+functions.</p>
+</li>
+<li><p class="first">You can select line and point style passing a third format argument to
+<tt class="docutils literal">plt.plot</tt> function. For example, to plot only points:</p>
+<pre class="literal-block">
+plt.plot(t,y,'.')
+</pre>
+</li>
+<li><p class="first">Find out from the <tt class="docutils literal">plt.plot</tt> docstring about other formats.
+Plot the data with red stars and dashed line.</p>
+</li>
+<li><p class="first">Export the plot to a PDF, PNG or SVG file using the <tt class="docutils literal">plt.savefig</tt>
+function.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="exploring-olympic-games">
+<h2>Exploring Olympic Games</h2>
+<p>File <tt class="docutils literal">olympics_merged.csv</tt> contains medal tables of the Summer
+Olympics from years 1896-2008 for each medal-winning athlete. Your
+goal is
+to compare how different countries performed in various disciplines.</p>
+<p>You do not have to finish all exercises - please work at your own pace.
+However, if you are stuck, please ask tutors for help or check the
+solution at the school's website.</p>
+<p>The template for all solutions is in <tt class="docutils literal">olympics_vis.py</tt> file. Please
+complete the function definitions in this file with your solutions.</p>
+<ol class="arabic">
+<li><p class="first"><strong>Implementing parallel coordinates</strong></p>
+<p>Parallel coordinates is a very useful technique that
+helps to visualise multidimensional data (both quantitative and
+categorical). The basic idea is to represent distinct dimensions
+on axes plotted in parallel (horizontal or vertical) and grouping
+coordinates belonging to a single data point (observation) by
+connecting them with straight lines.</p>
+<p>Read more in <a class="reference external" href="http://en.wikipedia.org/wiki/Parallel_coordinates">Wikipedia</a>.</p>
+<p>Your goal is to implement a generic <tt class="docutils literal">parallel_coordinates</tt>
+function to plot suitably-formatted data in parallel coordinate
+format. In addition, the function will take category names so that
+different observations can be visually grouped using colour coding.</p>
+<p>To finish exercise you have to implement <tt class="docutils literal">parallel_coordinates</tt>
+in <tt class="docutils literal">olympics_vis.py</tt> according to a function signature given in
+the function's doc-string. Please remember to:</p>
+<blockquote>
+<ul class="simple">
+<li>Use a single sub-plot and add grid lines at positions
+of different coordinates.</li>
+<li>Produce ''clean'', clutter-free plot by removing spurious
+lines and configuring the axes appropriately.</li>
+<li>Use ''qualitative'' color map such as <a class="reference external" href="http://colorbrewer2.org/index.php?type=qualitative&amp;scheme=Accent&amp;n=6">Accent</a> from
+Colorbrewer to represent data categories.</li>
+<li>Add labels of the coordinates and legend for the categories.</li>
+</ul>
+</blockquote>
+<p>To test your solution run the <tt class="docutils literal">ex1_parallel_coordinates.py</tt>
+example. This script should generate a plot similar to:</p>
+<p><em>Hint</em>: To inspect the data inside the function
+interactively you may use the <tt class="docutils literal">import
+pdb; pdb.set_trace()</tt> idiom or IPython's  magic keyword <tt class="docutils literal">%debug</tt> as
+introduced in Debugging lecture.</p>
+</li>
+</ol>
+<img alt="ex1_parallel_coordinates.png" src="ex1_parallel_coordinates.png" style="width: 400px;" />
+<ol class="arabic" start="2">
+<li><p class="first"><strong>Plotting medal standings</strong></p>
+<p>Your goal is to use <tt class="docutils literal">parallel_coordinates</tt> function implemented
+in previous exercise to represent how different countries performed
+in various disciplines. Here, the disciplines are the coordinates
+and the number of medals won by different countries across years
+are the values.</p>
+<p>You are provided with dataset that contains detailed information
+(name, represented country, Olympics edition, discipline etc.)
+about each medal-winning athlete.</p>
+<p>You have to count total number of medals in selected disciplines, years and
+countries and store the data in format accepted by the
+<tt class="docutils literal">parallel_coordinates</tt> function. To this end, implement
+<tt class="docutils literal">format_data</tt> function in <tt class="docutils literal">olympics_vis.py</tt>. Specific
+instructions are given in the function's doc-string.</p>
+<p><em>Note</em>: Medal counts of different countries are intermixed in the
+same table. <tt class="docutils literal">country_names</tt> are used to discriminate between
+countries as it was done with categories in previous exercise.</p>
+<p>Basic example for running your solution is provided in
+<tt class="docutils literal">ex2_summer_olympics.py</tt>, which  imports  the data, converts it
+using your <tt class="docutils literal">format_data</tt> function and
+calls <tt class="docutils literal">parallel_coordinates</tt> to produce the plot.</p>
+<p>The result should look similar to:</p>
+</li>
+</ol>
+<img alt="ex2_summer_olympics.png" src="ex2_summer_olympics.png" style="width: 400px;" />
+<p>Congratulations, you have just learnt the basics of matplotlib and you
+are ready to create your own data visualizations. I hope you enjoyed
+the exercise.</p>
+<ol class="arabic" start="3">
+<li><p class="first"><strong>Nomalising coordinates</strong></p>
+<p>One of the problems in the visualisation from the previous
+exercise is that each discipline has different number of
+competitions, so that the scales for the coordinates are
+different.</p>
+<p>Your goal is to implement a variant of parallel coordinate plot in
+which variables are normalised. To do that, please complete the
+implementation in <tt class="docutils literal">normalised_coordinates</tt> function in
+<tt class="docutils literal">olympics_vis.py</tt>. Please take care to set the ticks on the
+axes to correct data ranges (non-normalised).</p>
+<p><em>Hint</em>: One approach is to use separate sub-plots that are stacked
+together. However, please feel free to experiment with your ideas!</p>
+<p>You can test your solutions with <tt class="docutils literal">ex3_normalised_coordinates.py</tt>
+example. If you run it, you should get something similar to:</p>
+</li>
+</ol>
+<img alt="ex3_normalised_coordinates.png" src="ex3_normalised_coordinates.png" style="width: 400px;" />
+<p><strong>Data Sources</strong>:</p>
+<p><a class="reference external" href="http://www.theguardian.com/commentisfree/2012/aug/03/london-2012-olympics-open-data">The Guardian</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>

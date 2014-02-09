@@ -1,0 +1,248 @@
+===================
+Let your data SPEAK
+===================
+
+
+Introduction
+============
+
+
+Bad plot examples
+-----------------
+
+Good plot examples
+------------------
+
+What can be visualization used for?
+-----------------------------------
+
+1. Comapring data and showing relation ships
+2. Showing links between elements
+3. Showing structures
+4. Showing function
+5. Showing processes
+6. Systematisation and ordering
+
+Good visualizations can often lead to new scientific discoveries
+
+
+Design
+======
+
+Get out of grid
+---------------
+
+* plan out of grid
+* do not let technology impede your creativity
+* you don’t have to know how to draw, basic skills in handling of a pencil and paper are enough
+
+Visual Display of Quantitatve Information
+-----------------------------------------
+
+Napoleon campaign
+-----------------
+
+* principles of graphical excellence: substance, statistics, design
+* Napoleon campaign in Russia in 1812; Minard 1861
+* multiple variables mapped on the plot: the position, number of soldiers, temperature
+
+Cancer map
+----------
+
+high amount of data
+spatial information combined with frequency of cancer
+micro/macro design: general overview and lical differences
+we can try to track the causes: for example, in the north-east to the industry
+graphical elegance: simplicity of design and complexity of data
+
+Graphical Integrity principles
+------------------------------
+
+* graphical representation should be proportional to numerical data
+* Lie factor = size of effect shown in graph/size of effect in data
+* one data dimension -> one visual dimension
+* do not invent new visualizations - simple XY graphs are often more than enough
+
+Data ink-ratio
+---------------
+
+* data-ink ratio = data ink/total ink used in print the graph
+* avoid chartjunk: moire patterns, pie charts, ducks
+
+Bar plot:
+
+* the same amount of data, but reduced total ink usage
+* the white grid used instead of axes: easier to read of the values
+
+Scatter plot:
+
+- no grid,
+- no frame!
+- axes used for labelling and for range
+- axes do not cross in an arbitrary point 
+
+
+Data density maximization
+-------------------------
+
+data density maximization;
+amount of data generated in standard experiments and downloaded from
+various databases is enormous
+
+Small mutliplies
+----------------
+
+Modern designs
+--------------
+
+Berlin BVG map:
+
+- public transporation map: distances and exact spatial relations are not conserved, but only relations between different lines, station names, transporation hubs and tarif zone
+- abstraction of space to represent other variables!
+- thousends of people use this map each day to find best connections
+- allows for visual planning
+
+
+Anamorphic US Election Map:
+
+* solution of the common problem that the geographical size of the state is not the same as the number of representativies each state selects
+* here the size is scaled to the number of representatives: while the exact shape of the state is disturbed the geographical localization and relations are approximately conserved
+
+3D visualization
+
+Tools
+=====
+
+Flowchart
+---------
+
+- refine: usually in some dtp or editing software
+
+Matplotlib
+==========
+
+Interactive session
+-------------------
+
+
+ipython -pylab
+
+>>> plot([1,2,3])
+>>> close()
+
+evenly sampled time at 200ms intervals
+>>> t = arange(0., 5., 0.2)
+>>> plot(t, t, 'o')
+>>> plot(t, t**2, 'x')
+>>> xlabel("time")
+>>> legend(["t", "t^2"])
+
+>>> subplot(211)
+>>> plot(t, t)
+>>> subplot(212)
+>>> plot(t, t**2)
+
+Plot examples
+-------------
+
+* many interesting plot types: line/timeseries, pie chart, scatter,  image, bar, vector, contour, 3d plot, map (with basemap extension)
+* most plots have high quality out of the box (good default settings, colors etc.). 
+* However, for publication quality plots still some customization is required.
+
+Publication-ready figures
+-------------------------
+
+* matplotlib is easily cutomizable: almost each aspect of the plot can
+* be easily chnaged via object-oriented interface: **plot size,
+  localization of axes, fonts, colors, axes positions**
+* exported figure looks (almost) like on the screen (except figure size?)
+* here we apply some of the concepts discussed earlier in the talk:
+
+Source code:
+
+- change the default settings (figure size, backend, fonts)
+- since we change backend, we can import pyplot only after we apply the new settings
+- matplotlib offers a wide range of backends and output filters (here Agg backend - no GUI)
+
+Matplotlib OOP API
+-------------------
+
+this is often not enough. however matplotlib lets you to go even deeper: it offers a wide selection of graphical primitives with which you can build your own plots and visualizations. and remember: everything is Python so you can read the code, learn from it and modify it!
+
+source code: example of matplotlib API usage
+
+example in practice to achieve an impressionistic effect
+
+Interactive plots
+-----------------
+
+in matplotlib you can also build complex GUI:
+- embbed mpl plot in Gtk, Qt,  Wx and even html!
+- add toolbars
+- use widgets and callbacks
+
+source code example: pick event
+
+Building applications with MPL
+------------------------------
+
+example of using TraitsGUI and matplotib from tutorial by Gael
+Varoquaux: Writing a graphical application for scientific programming using TraitsUI
+
+Mayavi
+======
+
+Mayavi2 demo
+------------
+
+1. surface 
+- run mayavi
+- add a surface
+- navigate in the scene
+- add an outline
+- change to contour lines
+
+2. Load heart.vti
+This is a simple volume of 3D data (32 x 32 x 12 points) with scalars
+at each point (the points are equally spaced). he data apparently represents a CT scan of a heart. I have no idea whose heart! 
+
+- add IsoSurface
+- add ContourGridPlan
+- add ScalarCutPlan, play with 3d widgets
+
+
+Mlab
+----
+
+
+Plot mexican hat
+
+source code (do interactively)
+
+ipython -wthread
+
+>>> from enthought.mayavi import mlab
+>>> import numpy as np
+
+>>> x, y = np.ogrid[-10:10:100j, -10:10:100j]
+>>> r = np.sqrt(x**2 + y**2)
+>>> z = np.sin(r)/r
+
+>>> mlab.surf(x,y, 10*z) 
+>>> mlab.outline()
+>>> mlab.colorbar()
+
+
+Sample plots by mlab
+--------------------
+
+quiver3d, plot3d, point3d and contour3d
+example of full visualization
+
+The End
+=======
+
+Python is a prefect tool for data visualization:
+- in addition to the tools presented it offers a great functionality for data parsing, statisitcs and UI
+
+
