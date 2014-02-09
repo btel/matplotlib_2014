@@ -1,7 +1,7 @@
 # Introduction
 
 In companies, institutes or at home we generate large amounts types of data. A success of our business or research may depend on a proper handling of the data. We can extract 
-meaningful patterns by applying data reduction and analysis techniques, but eventually we must present the data graphically. Many software packages allow to create a simple line plots or bar charts, but creating data-dense visualisations without distortions is still more of an art than science. The goal of the workshop is to arm you with practice-oriented tips that will help you to avoid clutter and increase the data density of your graphs.
+meaningful patterns by applying data reduction and analysis techniques, but eventually we must present the data graphically. Many software packages allow to create simple line plots or bar charts, but creating data-dense visualisations without distortions is still more of an art than science. The goal of the workshop is to arm you with practice-oriented tips that will help you to avoid clutter and increase the data density of your graphs.
 
 matplotlib is a de facto standard in 2D plotting with Python in active development since 2003. The large number of [visualisation types](http://matplotlib.org/gallery.html) is not matched by any other plotting library available for Python. It can be used to create interactive visualisations, hard copy plots or standalone applications.
 
