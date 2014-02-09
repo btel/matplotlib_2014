@@ -7,6 +7,8 @@ matplotlib is a de facto standard in 2D plotting with Python in active developme
 
 The tutorial will introduce the basic theory of data visualisation and put it in use through matplotlib. To unleash the full power of matplotlib, we will reach under the hood and discover some hidden gems in terms of customisation and working with visual primitives. The participants will be encouraged to practice their visualisations skills trough a series of examples. They will learn how to build complex data visualisations from ground up and spice them with a bit of interactivity. 
 
+Website: http://btel.github.io/matplotlib_2014
+
 # Pre-eleminary schedule
 
 1) Introduction to matplotlib (30 min)
