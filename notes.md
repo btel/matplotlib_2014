@@ -32,21 +32,11 @@ plots:
 customisation:
   • adding legend
 
-# visualising correlations
-
-datasets:
-plots:
-   • 2d x/y plots
-   • marginal distribution
-customisation:
-   • marker styles/colors, line widhts
-   • subplots
-
 # spotting differences — multivariate data 
 
 datasets: Allen Brain Atlas
 plots:
-  • scatter plot
+  • 2d x/y plots
   • faceted plotting
   • heatmap
 customisation: 
@@ -55,12 +45,17 @@ customisation:
 
 # data reduction/finding patterns 
 
-datasets:
+datasets: Allen Brain Atlas
 extra libs: sklearn
+techniques:
+  * pca
+  * whitening
+  * kmeans
 plots:
-  • mds or locally linear embedding
+  • scatter plot
   • clustering
-  • animation?
+  - svg processing
+  • (mds or locally linear embedding)
 customisation:
   • insets
 
