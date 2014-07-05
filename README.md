@@ -9,7 +9,7 @@ The tutorial will introduce the basic theory of data visualisation and put it in
 
 Website: http://btel.github.io/matplotlib_2014
 
-# Pre-eleminary schedule
+# Preliminary schedule
 
 1) Introduction to matplotlib (30 min)
 - introduction to data visualisation
