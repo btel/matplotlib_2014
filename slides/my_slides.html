@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title></title>
+
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/ep2014.css" id="theme">
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                <section data-markdown>
+                # Let your data speak!
+                ### Data visualisation in matplotlib
+                by Bartosz Teleńczuk
+			</section>
+            <section>
+                <section data-background="images/ColombusMap.jpg">
+                <h2 style="transform: rotate(-90deg); position: absolute;"> Introduction <h2>
+                </section>
+            <section>
+                <h3>Anscombe dataset</h3>
+            <div style="position:relative; text-align: left; left:80px">
+                <img src="figures/anscombe1.svg" class="fragment fade-out" data-fragment-index="0"></img>
+                <img style="position:absolute; top:0px; left:0px" class="fragment fade-in" data-fragment-index="0" src="figures/anscombe2.svg"></img>
+            </div>
+            </section>
+            <section>
+                <h3> Exploratory data analysis</h3>
+                <blockquote>
+                The greatest value of a picture is when it forces us to notice what we never expected to see.
+                </blockquote>
+            </section>
+            <section>
+                <h3>Visual presentation</h3>
+                <image src="images/Minard.png"></image>
+            </section>
+            <section>
+                <div style="float:left"><iframe src="http://neuralengr.com/asifr/journals/journals_optogenetic.html" marginwidth="0" marginheight="0" scrolling="no" width="600px" height="650px"></iframe></div>
+                <h3 style="float:left;width:200px">Interactive presentation</h3>
+            </section>
+        <section>
+            <p><image src="figures/mpl_logo2.svg"></image></p>
+            <p><image src="images/John-hunter-crop-2.jpg" width="30%"></image></p>
+            <p>John Hunter (1968 - 2012)</p>
+        </section>
+        <section>
+            <image width="200%" src="figures/pyplot_publication.svg"></image>
+        </section>
+        <section>
+                <image width="200%" src="figures/plot_types.svg"></image>
+        </section>
+        <section>
+            <blockquote> pyplot is a stateful interface that handles much of the boilerplate for creating figures and axes and connecting them to the backend of your choice, and maintains module-level internal data structures representing the current figure and axes to which to direct plotting commands.</blockquote>
+        </section>
+        </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                theme: 'ep2014',
+				transition: 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					//{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+					//{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
