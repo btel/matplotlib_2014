@@ -18,6 +18,7 @@ plots:
 customisation:
   * stateful interface:
      - `plt.*` interface
+     * stateful design and accessing the state (`gca`)
      - `plt.show()` and matplotlib backends ("Qt/Tk/GTK/ipython/Web")
      - setting labels (`xlabel`, `ylabel`)
      - manual tick positions (?) (`plt.xticks`)
@@ -35,7 +36,6 @@ design point:
    * tufte style
 customisation:
   * object-oriented interface:
-     * stateful design and accessing the state (`gca`)
      * axes container its methods and attributes (spines,x/yaxis)
      * configure spines and ticks ticks position (`set_ticks_position`)
      * set background color (`set_axis_bgcolor`)
