@@ -5,12 +5,13 @@ Introduction:
   * EDA = exploratory data analysis = visual data analysis
   * static print figures
   * open data
+  * JDH and brief history of matplotlib
 
 Topics:
 
 # visualising patterns over time
 
-datasets: google trends or weather
+datasets: weather
 extra libs: statsmodels, datetime, goodies 
 plots:
   • time series plot (`plt.plot`)

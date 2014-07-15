@@ -12,6 +12,7 @@
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/ep2014.css" id="theme">
+        <link rel="stylesheet" href="lib/css/default.css">
 	</head>
 
 	<body>
@@ -60,10 +61,79 @@
         <section>
                 <image width="200%" src="figures/plot_types.svg"></image>
         </section>
+        </section>
         <section>
+            <section data-background="images/1923.jpg">
+                <h2 style="color: white">Patterns over time</h3> 
+            </section>
+            <section>
+                <h3> Backends</h3>
+                <table style="margin-left: auto; margin-right: auto;"> 
+                    <tr> <td> TkAgg</td> <td> Qt4Agg</td><td> WebAgg</td></tr>
+                    <tr> 
+                        <td>
+                            <img src="images/mpl_tkagg.png" width="300px"/>
+                        </td>
+                        <td>
+                            <img src="images/mpl_qt4agg.png" width="300px"/>
+                        </td>
+                        <td>
+                            <img src="images/mpl_webagg.png" width="300px"/>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h3>Antigrain geometry</h3>
+                <img src="images/mpl_tkagg_annotated.png" />
+            </section>
+            <section>
+                <table style="margin-left: auto; margin-right: auto;"> 
+                    <tr> <td> Raster (PNG) </td> <td> Vector (SVG) </td></tr>
+                    <tr> 
+                        <td>
+                            <img src="figures/mpl_backend.png" width="450px"/>
+                        </td>
+                        <td>
+                            <img src="figures/mpl_backend.svg" width="450px"/>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        <section>
+            <h3>pyplot interface</h3>
+
+        <pre><code class="python hljs"> 
+import matplotlib.pyplot as plt
+plt.figure()
+plt.subplot(...)
+plt.plot(...) 
+plt.show()
+        </code></pre>
             <blockquote> pyplot is a stateful interface that handles much of the boilerplate for creating figures and axes and connecting them to the backend of your choice, and maintains module-level internal data structures representing the current figure and axes to which to direct plotting commands.</blockquote>
         </section>
-        </section>
+    <section>
+        <h3>Recap</h3>
+        <div style="-moz-column-count: 2">
+
+        <code>
+            plt.plot<br/>
+            plt.show</br>
+            plt.xlabel</br>
+            plt.ylabel</br>
+            plt.xticks</br>
+            plt.xlim</br>
+            plt.gca</br>
+            plt.text</br>
+            xaxis.set_minor_locator</br>
+            yaxis.set_major_locator</br>
+            YearsLocator</br>
+            MonthLocator</br>
+        </code>
+    </div>
+    </section>
+    </section>
 			</div>
 
 		</div>
@@ -90,7 +160,7 @@
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					//{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
 					//{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
