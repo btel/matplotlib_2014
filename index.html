@@ -51,13 +51,13 @@ meaningful patterns by applying data reduction and analysis techniques, but even
 <h1>
 <a name="pre-eleminary-schedule" class="anchor" href="#pre-eleminary-schedule"><span class="octicon octicon-link"></span></a>Schedule</h1>
 
-<p>1) Introduction  </p>
+<p>0) Introduction  </p>
 
 <ul>
 <li>introduction to data visualisation</li>
 <li> matplotlib and its history</li>
 
-</ul><p>2) Visualising patterns over time</p>
+</ul><p>1) Visualising patterns over time</p>
 
 <ul>
     <li>quick interactive data exploration</li>
@@ -66,38 +66,67 @@ meaningful patterns by applying data reduction and analysis techniques, but even
     <li> time series plotting and smoothing </li>
     <li> working with dates </li>
 </ul>
-<p>3) Visualising proportions </p>
+<p>2) Visualising proportions </p>
 
 <ul>
 <li>matplotlib object-oriented model</li>
 <li> creating visual style </li>
 <li> bar plots </li>
-</ul><p>4)  Visualising distributions </p>
-
+</ul><p>3)  Visualising distributions </p>
 <ul>
 <li>matplotlib transforms</li>
 <li> histograms, boxplots and kernel density estimators </li>
 </ul>
+<p>4) Visualising correlations</p>
+<p>5) Finding patterns</p>
+<p>6) Making maps </p>
 
 <h1>
 <a name="materials" class="anchor" href="materials"><span class="octicon octicon-link"></span></a>Materials</h1>
 
 <p><a href="http://rawgit.com/btel/matplotlib_2014/master/slides/presentation.html#/"> Slides </a></p>
 <p><a href="http://nbviewer.ipython.org/github/btel/matplotlib_2014/tree/master/notebooks/"> Notebooks </a></p>
+<p><a href="https://github.com/btel/matplotlib_2014/raw/master/handouts.pdf"> Handouts </a></p>
 
 <p>See also <a href="https://github.com/btel/matplotlib_2014/raw/zurich_2013/slides/visualization_intro.pdf"> slides</a>,
 <a href="http://nbviewer.ipython.org/github/btel/matplotlib_2014/blob/zurich_2013/slides/matplotlib_tutorial.ipynb">examples</a>
 and <a href="https://rawgithub.com/btel/matplotlib_2014/zurich_2013/exercises/docs/exercises.html">exercises</a>
 from my previous tutorial</p>
+
+<h1>Prerequisites</h1>
+
 <p>Required software:</p>
 
 <ul>
 <li>python 2.7 or 3.x</li>
-<li>ipython (recommended)</li>
 <li>matplotlib</li>
-<li>basemap (optional)</li>
 <li>numpy</li>
-</ul><p>All of the libraries are available in standard linux distributions, via pip or in scientific python distributions (such as <a href="https://store.continuum.io/cshop/anaconda/">anaconda</a>).</p>
+<li>pandas</li>
+</ul>
+
+<p>Optional software:</p>
+
+<ul>
+<li>scipy</li>
+<li>cartopy</li>
+<li>scikit-learn</li>
+<li>statsmodels</li>
+<li>lxml</li>
+</ul>
+
+<p>All of the libraries are available in standard linux distributions, via pip or in scientific python distributions (such as <a href="http://continuum.io/downloads">anaconda</a>).</p>
+
+<p> You can also install them with <code>pip</code> (for example inside virtual environment):</p>
+<pre><code>
+mkdir ~/.virtualenv
+virtualenv ~/.virtualenv/ep2014_mpl          #crete virtualenv
+source ~/.virtualenv/ep2014_mpl/bin/activate #activate it (in bash)
+pip install -U numpy scipy matplotlib        #absoulte basics 
+pip install -U ipython pyzmq jinja2          #for ipython notebook
+pip install -U pandas                        #used in many examples
+pip install -U scikit-learn lxml patsy       #extras
+pip install -U statsmodels 
+</code></pre>
 
 <h1>
 <a name="about-the-trainer" class="anchor" href="#about-the-trainer"><span class="octicon octicon-link"></span></a>About the trainer</h1>
