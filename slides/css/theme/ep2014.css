@@ -13,6 +13,13 @@
 
 /* added */
 
+table.stemleaf {
+    border-collapse: collapse;
+}
+table.stemleaf th {
+    border-right: 1px solid #000;
+}
+
 table {
     margin-left: auto;
     margin-right: auto;
@@ -22,6 +29,7 @@ table {
 .reveal pre, .reveal blockquote {
     box-shadow: none;
 }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
